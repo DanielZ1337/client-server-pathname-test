@@ -14,6 +14,7 @@ const ServerComponent = async () => {
 
   const users = await getUsers()
 
+  // getting the pathname from the headers
   const pathname = headers().get('x-pathname');
 
   console.log('que tiene: ', pathname)
